@@ -1,0 +1,101 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	min-height: 100vh;
+	font-family: 'Roboto', sans-serif;
+	color: #f3f3f3;
+	background-image: linear-gradient(rgba(136, 136, 206, 0.8), rgba(136, 136, 206, 0.8)), url(../img/background.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.container {
+	max-width: 720px;
+	margin: auto;
+}
+
+.header {
+	padding: 0 0.75rem;
+	margin: 2rem 0;
+}
+
+#title {
+	text-align: center;
+	font-size: 2.25rem;
+	margin-bottom: 0.5rem;
+}
+
+#description {
+	text-align: center;
+	font-size: 1.25rem;
+	font-style: italic;
+	font-weight: lighter;
+	margin-bottom: 0.5rem;
+}
+
+#survey-form {
+	display: flex;
+	flex-direction: column;
+	gap: 1.25rem;
+	padding: 2.5rem 0.75rem;
+	border-radius: 5px;
+	background: #1b1b32cc;
+}
+
+.input-group {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.input-group label,
+.input-group p {
+	font-size: 1.25rem;
+}
+
+.input-group input,
+.input-group textarea,
+.input-group select {
+	color: #495057;
+	padding: 0.5rem 1rem;
+	font-size: 1.25rem;
+	border-radius: 4px;
+	border: none;
+	outline: none;
+}
+
+.box {
+	display: flex;
+	gap: 0.5rem;
+	align-items: center;
+}
+
+.box input {
+	width: 1.25rem;
+	height: 1.25rem;
+}
+
+#message {
+	min-height: 180px;
+	resize: vertical;
+	font-family: 'Roboto', sans-serif;
+}
+
+#submit {
+	background: #37af65;
+	color: #f3f3f3;
+	padding: 0.75rem;
+	font-size: 1rem;
+	font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+	#survey-form {
+		padding: 2.5rem;
+	}
+}
